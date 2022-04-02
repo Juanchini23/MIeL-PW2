@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(230, 228, 228);
+}
+
 h1 {
     color: aqua;
 }
 
 header{
     background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
     width: 100%;
 }
 
@@ -20,15 +23,84 @@ header img{
 
 .fondo-imagen{
     height: 600px;
-    background-image: url('https://cdn.unlam.edu.ar/static/mielV4/imagenes/home/foto-home-1.jpg')
+    width: 100%;
+    background-image: url('https://cdn.unlam.edu.ar/static/mielV4/imagenes/home/foto-home-1.jpg');
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
 
-.login{
+/*.login{
     position: relative;
     top: 200px;
-    left: 200px;
+    left: 50%;
+}*/
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor{
+    background-color: rgb(0, 255, 21);
 }
 
 .form{
-    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin: .8em;
+}
+
+form label{
+    text-align: center;
+    margin-top: .8em;
+}
+
+form input{
+    border: none;
+    border-bottom: 1px black solid;
+    width: 75%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    padding: .3em;
+}
+
+.dos-imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 3em;
+}
+
+.dos-imagenes img{
+    width: 630px;
+    height: 500px;
+    border-left: 3px solid green;
+    margin: 0 1em;
+}
+
+.tercer-parte{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tercer-parte article img{
+    width: 80%;
+}
+
+.tercer-parte article{
+   
 }
