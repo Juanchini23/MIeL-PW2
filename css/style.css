@@ -13,8 +13,9 @@ h1 {
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
+    position: fixed;
 }
 
 header img{
@@ -49,8 +50,40 @@ header img{
     text-align: center;
 }
 
+.ingresar, .cambiar{
+    margin: .8em 0;
+    background-color: #2196F3;
+    width: 75%;
+    text-decoration: none;
+    color: white;
+    padding: .5em;
+    margin: 1.5em auto;
+}
+
+.cambiar:hover{
+    box-shadow: 2px 10px 5px 1px rgba(0,0,0,0.13);
+}
+
+.ingresar:hover{
+    box-shadow: 2px 10px 5px 1px rgba(0,0,0,0.13);
+}
+
+.olvide{
+    text-decoration: none;
+    padding-top: .8em;
+}
+
+.olvide:hover{
+    color: rgb(1, 1, 81);
+}
+
 .contenedor{
-    background-color: rgb(0, 255, 21);
+    background-color: #4dbb47;
+}
+
+.contenedor h2{
+    color: white;
+    margin-top: .5em;
 }
 
 .form{
@@ -58,18 +91,25 @@ header img{
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     margin: .8em;
+    width: 20em;
 }
 
 form label{
     text-align: center;
-    margin-top: .8em;
+    margin: .8em 0;
 }
 
 form input{
     border: none;
     border-bottom: 1px black solid;
     width: 75%;
-    margin: auto;
+    margin: .3em auto .05em;
+    padding: .5em;
+}
+
+form input:focus{
+    border: none;
+    border-bottom: 1px rgb(0, 54, 161) solid;
 }
 
 h2{
@@ -92,15 +132,93 @@ h2{
     margin: 0 1em;
 }
 
+.dos-imagenes img:hover{
+    box-shadow: 9px 10px 6px 1px rgba(0,0,0,0.13);
+}
+
 .tercer-parte{
     display: flex;
     justify-content: space-around;
-}
-
-.tercer-parte article img{
-    width: 80%;
+    margin-bottom: 3em;
+    text-align: center;
 }
 
 .tercer-parte article{
-   
+    background-color: white;
+}
+
+.tercer-parte article:hover{
+    box-shadow: 9px 10px 6px 1px rgba(0,0,0,0.13);
+}
+
+.tercer-parte article img{
+    width: 400px;
+}
+
+.tercer-parte article p{
+    margin:5px 0;
+}
+
+.naranja{
+    color: darkorange;
+}
+
+.celeste{
+    color: rgb(30, 30, 242);
+}
+
+.rojo{
+    color: red;
+}
+
+h4{
+    margin-top: 5px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.unlam{
+    color: rgb(194, 194, 194);
+    text-align: center;
+    background-color: rgb(123, 123, 123);
+    padding: 1em;
+}
+
+.logo{
+    width: 8em;
+}
+
+.varios{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 0;
+    background-color: rgb(123, 123, 123);
+}
+
+.abajo{
+    text-align: center;
+    background-color: rgb(60, 60, 60);
+    padding: 2em;
+}
+
+.separar p{
+    padding: .3em 0;
+}
+
+.ul li{
+    padding: .3em 0;
+    list-style: none;
+}
+
+.ul a{
+    color:white;
+    text-decoration: none;
+}
+
+.ul a:hover{
+    color:rgb(219, 216, 216);
 }
